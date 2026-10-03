@@ -1,5 +1,5 @@
 // Central content + constants. Edit copy here, not in markup.
-export const ACCENT = 0xf2b544; // brass: the single accent (mirrors --accent in CSS)
+export const ACCENT = 0x3d8bff; // electric blue: the single accent (mirrors --accent in CSS)
 
 export const SERVICES = [
   { slug:'paid-social', name:'Paid Social', variant:'pillar',

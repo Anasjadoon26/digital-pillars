@@ -8,7 +8,7 @@ document.getElementById('services-list').innerHTML = SERVICES.map(s =>
   `<a class="svc" href="service.html?s=${s.slug}"><span>${s.name}</span><em>${s.tag}</em><i aria-hidden="true">View</i></a>`).join('');
 const track = document.getElementById('t-track');
 track.innerHTML = TESTIMONIALS.map(t =>
-  `<figure class="glass t"><blockquote>${t[2]}</blockquote><figcaption><b>${t[0]}</b><span>${t[1]}</span></figcaption><strong>${t[3]}</strong></figure>`).join('');
+  `<figure class="glass t"><blockquote>${t[2]}</blockquote><figcaption><i class="av">${t[0][0]}</i><b>${t[0]}</b><span>${t[1]}</span></figcaption><strong>${t[3]}</strong></figure>`).join('');
 document.querySelectorAll('[data-dir]').forEach(b => b.addEventListener('click', () =>
   track.scrollBy({ left: b.dataset.dir * track.clientWidth * .8, behavior: reduced ? 'auto' : 'smooth' })));
 
